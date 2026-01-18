@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowan Brooks | Creative Director</title>
+    <meta name="description" content="Creative Director specializing in AI-powered brand strategy and video production.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(120, 80, 200, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 30%, rgba(60, 140, 200, 0.12) 0%, transparent 45%),
+                radial-gradient(ellipse at 40% 80%, rgba(200, 80, 120, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 90% 80%, rgba(80, 180, 160, 0.08) 0%, transparent 45%);
+            z-index: 0;
+        }
+
+        .video-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.05);
+            margin-bottom: 2rem;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .video-container:hover {
+            transform: scale(1.02);
+        }
+
+        .video-container video {
+            display: block;
+            width: 160px;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 540px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .title {
+            font-size: 1.1rem;
+            color: #888;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #ccc;
+            margin-bottom: 2.5rem;
+        }
+
+        .links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: #fafafa;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid #333;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .links a:hover {
+            background: #fafafa;
+            color: #0a0a0a;
+            border-color: #fafafa;
+        }
+
+        .links a.primary {
+            background: #fafafa;
+            color: #0a0a0a;
+            border-color: #fafafa;
+        }
+
+        .links a.primary:hover {
+            background: transparent;
+            color: #fafafa;
+        }
+
+        .status {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .status span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @media (max-width: 480px) {
+            .name {
+                font-size: 2rem;
+            }
+            .links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .links a {
+                width: 100%;
+            }
+            .video-container video {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="hero-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <h1 class="name">Rowan Brooks</h1>
+        <p class="title">Creative Director</p>
+        
+        <p class="bio">
+            15 years in advertising. Now building at the intersection of AI and creative strategy — video production systems, brand automation tools, and open-source frameworks.
+        </p>
+
+        <div class="links">
+            <a href="mailto:hello@rowanbrooks.co" class="primary">Get in Touch</a>
+            <a href="https://github.com/rowanbrooks100">GitHub</a>
+            <a href="https://linkedin.com/in/rowanbrooks">LinkedIn</a>
+        </div>
+
+        <p class="status">
+            <span></span> Available for select projects
+        </p>
+    </div>
+</body>
+</html>
