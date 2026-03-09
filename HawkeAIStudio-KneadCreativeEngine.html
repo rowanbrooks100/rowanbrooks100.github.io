@@ -904,11 +904,24 @@
     <div style="margin-top: 32px; padding: 24px; background: var(--bg-surface); border-radius: var(--radius); border: 1px solid var(--border);">
       <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-dim); margin-bottom: 12px;">✅ Validation Gate</div>
       <div style="font-size: 13px; color: var(--text-mid); margin-bottom: 12px; line-height: 1.6;">Before generating creative, complete this one-liner test. If you can't fill it in, the strategy isn't tight enough yet.</div>
-      <div style="background: white; border-radius: var(--radius-sm); padding: 20px 24px; border: 1px solid var(--border); font-size: 14px; color: var(--text); line-height: 2.2;">
-        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 4px;">
-          We make <input id="validation-what" type="text" placeholder="what you do" style="border:none;border-bottom:2px solid var(--red);outline:none;font-size:14px;padding:4px 8px;min-width:180px;width:auto;flex-grow:2;font-family:var(--font);background:transparent;">
-          for <input id="validation-who" type="text" placeholder="your audience" style="border:none;border-bottom:2px solid var(--red);outline:none;font-size:14px;padding:4px 8px;min-width:180px;width:auto;flex-grow:2;font-family:var(--font);background:transparent;"> who feel <input id="validation-feel" type="text" placeholder="current pain/state" style="border:none;border-bottom:2px solid var(--red);outline:none;font-size:14px;padding:4px 8px;min-width:180px;width:auto;flex-grow:1;font-family:var(--font);background:transparent;">
-          and want to feel <input id="validation-want" type="text" placeholder="desired outcome" style="border:none;border-bottom:2px solid var(--red);outline:none;font-size:14px;padding:4px 8px;min-width:180px;width:auto;flex-grow:1;font-family:var(--font);background:transparent;">.
+      <div style="background: white; border-radius: var(--radius-sm); padding: 20px 24px; border: 1px solid var(--border); font-size: 14px; color: var(--text);">
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="min-width:110px;color:var(--text-dim);font-size:13px;">We make</span>
+            <input id="validation-what" type="text" placeholder="what you do" style="border:none;border-bottom:2px solid var(--red);outline:none;font-size:14px;padding:4px 8px;width:100%;font-family:var(--font);background:transparent;">
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="min-width:110px;color:var(--text-dim);font-size:13px;">for</span>
+            <input id="validation-who" type="text" placeholder="your audience" style="border:none;border-bottom:2px solid var(--red);outline:none;font-size:14px;padding:4px 8px;width:100%;font-family:var(--font);background:transparent;">
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="min-width:110px;color:var(--text-dim);font-size:13px;">who feel</span>
+            <input id="validation-feel" type="text" placeholder="current pain/state" style="border:none;border-bottom:2px solid var(--red);outline:none;font-size:14px;padding:4px 8px;width:100%;font-family:var(--font);background:transparent;">
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="min-width:110px;color:var(--text-dim);font-size:13px;">and want to feel</span>
+            <input id="validation-want" type="text" placeholder="desired outcome" style="border:none;border-bottom:2px solid var(--red);outline:none;font-size:14px;padding:4px 8px;width:100%;font-family:var(--font);background:transparent;">
+          </div>
         </div>
       </div>
       <div id="foundation-summary-content" style="font-size: 13px; color: var(--text-mid); line-height: 1.8;"></div>
