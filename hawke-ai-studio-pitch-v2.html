@@ -78,6 +78,12 @@
     text-transform: uppercase;
     color: var(--yellow);
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .nav-links {
@@ -1421,7 +1427,7 @@
 <section id="landscape">
   <div class="section-label">01 — The Current Landscape</div>
   <h2 class="section-title">Four tools. <em>One gap.</em></h2>
-  <p class="section-subtitle">The paid creative ecosystem has four established players. Each does one thing well. Only one produces creative — and it's lo-fi by design.</p>
+  <p class="section-subtitle">The paid creative ecosystem has four established players. Each does one thing well. Only one touches production — and only at the lo-fi end.</p>
 
   <div class="cards-grid">
     <div class="card">
@@ -1448,15 +1454,15 @@
     <div class="card">
       <div class="card-icon" style="background: rgba(139,92,246,0.15); color: #8B5CF6;">P</div>
       <h3>Plai</h3>
-      <div class="card-role" style="color: #8B5CF6;">Ad Deployment</div>
-      <p>Cross-platform campaign creation across Meta, Google, TikTok, LinkedIn, Snapchat, Spotify. AI creative generation. White-label.</p>
-      <div class="card-question">"Launch it everywhere."</div>
+      <div class="card-role" style="color: #8B5CF6;">Ad Deployment + Lo-Fi Production</div>
+      <p>Cross-platform campaign creation across Meta, Google, TikTok, LinkedIn, Snapchat, Spotify. Deploys lo-fi AI-generated ads at launch. White-label.</p>
+      <div class="card-question">"Launch it everywhere — with basic lo-fi creative."</div>
     </div>
   </div>
 
   <div class="insight">
     <div class="insight-label">The Gap</div>
-    <h3>Foreplay researches. Motion analyzes. Hawke AI monitors. Plai deploys — and generates lo-fi creative at the point of launch. Nobody produces premium, strategy-led creative. Every sophisticated execution still ends with a human handoff that costs 2–4 weeks and thousands per asset.</h3>
+    <h3>Foreplay researches. Motion analyzes. Hawke AI monitors. Plai deploys — and generates basic lo-fi assets at launch. But none of them produce strategically-directed, brand-specific creative at scale. They all end with a recommendation or a template. That gap costs 2–4 weeks and thousands per asset.</h3>
   </div>
 </section>
 
@@ -2564,7 +2570,7 @@ function mGoTo(i) {
       <h3>Strategic <em>Infrastructure</em></h3>
       <p>Start with what's easy to say yes to. Embed the strategy framework into paid media teams. Introduce production pipelines as acceleration tools. By the time it's a platform conversation, everyone's already using it.</p>
       <ul class="path-phases">
-        <li><span class="phase-num">01</span>Strategy framework + Creative Engine → paid media teams</li>
+        <li><span class="phase-num">01</span>Strategy framework + Knead Creative Engine → paid media teams</li>
         <li><span class="phase-num">02</span>Weavy production pipelines → creative teams</li>
         <li><span class="phase-num">03</span>Connect strategy + production + monitoring</li>
         <li><span class="phase-num">04</span>Internal adoption becomes product reality</li>
@@ -2579,10 +2585,10 @@ function mGoTo(i) {
     <div class="phase-detail">
       <h4 style="color: var(--cyan);">Phase 1: Embed the Strategy Layer</h4>
       <div class="phase-timeline">Q2 2026 · Low lift · Easy yes</div>
-      <p>Get Lemonade's 7-step Strategic Foundation and a client-specific Creative Engine into the paid media teams' daily workflow. This is a <strong style="color:var(--text);">process upgrade</strong>, not a product pitch — it makes existing work better without changing anyone's tools.</p>
+      <p>Get Lemonade's 7-step Strategic Foundation and the Knead Creative Engine into the paid media teams' daily workflow. This is a <strong style="color:var(--text);">process upgrade</strong>, not a product pitch — it makes existing work better without changing anyone's tools.</p>
       <ul>
         <li>Train paid media teams on the Strategic Foundation worksheet</li>
-        <li>Deploy Creative Engine for diversification matrix planning</li>
+        <li>Deploy Knead Creative Engine for diversification matrix planning</li>
         <li>Every campaign brief runs through the One-Liner validation gate</li>
         <li>Teams start thinking strategically about creative — structured inputs exist for the first time</li>
       </ul>
@@ -2604,7 +2610,7 @@ function mGoTo(i) {
       <h4 style="color: var(--cyan);">Phase 3: Close the Loop</h4>
       <div class="phase-timeline">Q4 2026 – H1 2027 · Natural evolution</div>
       <p>The strategy layer and the production layer are now both running inside Hawke. Add Hawke AI's monitoring data as the feedback signal. <strong style="color:var(--text);">Congratulations — you've built Studio piece by piece</strong> without ever asking permission to build Studio.</p>
-      <p style="font-size:13px; color:var(--text-dim); margin-top:8px; font-style:italic;">Important caveat: The Creative Engine currently structures thinking based on strategic intuition and LLM reasoning — not live performance data. It helps teams identify coverage gaps, not predict winners. The closed feedback loop becomes possible once structured inputs (Phase 1) and performance correlation (Randy's Hawke AI work) are both in place.</p>
+      <p style="font-size:13px; color:var(--text-dim); margin-top:8px; font-style:italic;">Important caveat: The Knead Creative Engine currently structures thinking based on strategic intuition and LLM reasoning — not live performance data. It helps teams identify coverage gaps, not predict winners. The closed feedback loop becomes possible once structured inputs (Phase 1) and performance correlation (Randy's Hawke AI work) are both in place.</p>
       <ul>
         <li>Hawke AI performance data feeds back into strategy layer</li>
         <li>Fatigue detection triggers new creative generation automatically</li>
@@ -2799,7 +2805,7 @@ function mGoTo(i) {
   <div class="phase-detail">
     <h4 style="color:var(--yellow);">Step 3: Gap Detection</h4>
     <div class="phase-timeline">Effort: Weeks &middot; Comparison function</div>
-    <p>Compare tagged active creatives against the diversification matrix from the Creative Engine. Identify which motivator &times; format combos are missing or declining. This is a database query, not an AI problem.</p>
+    <p>Compare tagged active creatives against the diversification matrix from Knead Creative Engine. Identify which motivator &times; format combos are missing or declining. This is a database query, not an AI problem.</p>
   </div>
 
   <div class="phase-detail">
@@ -2858,11 +2864,11 @@ function mGoTo(i) {
   <div class="tiers">
     <div class="tier">
       <div class="tier-name">Scale Tier</div>
-      <div class="tier-price">$5K–$15K</div>
+      <div class="tier-price">$2K–$15K</div>
       <div class="tier-period">per month</div>
       <ul class="tier-features">
-        <li>20–50 static ads / month</li>
-        <li>5–10 video ads / month</li>
+        <li>8–48 static ads / month</li>
+        <li>8–24 video ads / month</li>
         <li>Multi-platform formats</li>
         <li>Monthly strategy refresh</li>
         <li>Strategic Foundation applied</li>
@@ -2916,7 +2922,7 @@ function mGoTo(i) {
     <div class="rm-card">
       <h4>Image-to-Video Extension</h4>
       <div class="rm-time">Next milestone</div>
-      <p>Each hero frame from Pipeline #8 (Commercial Production) becomes an input to Veo 3 or Sora for video generation. One pipeline extension away from automated TV spot production. Already proven across multiple client workflows.</p>
+      <p>Each hero frame from Pipeline #8 (Commercial Production) becomes an input to Veo 3 or Sora for video generation. One pipeline extension away from automated TV spot production. Already proven in separate Binance and Knead workflows.</p>
       <div class="rm-effort">Effort: 2&ndash;4 weeks &middot; Models and pattern already validated</div>
     </div>
 
